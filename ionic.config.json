@@ -1,0 +1,8 @@
+{
+  "name": "sophos-firewall",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "pro_id": "e05b6b91"
+}
