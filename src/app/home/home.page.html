@@ -4,13 +4,27 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      Home
+      Quản lý Internet gia đình
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the
-    <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+  <ion-grid>
+    <ion-row *ngFor="let item of items" align-items-center>
+      <ion-col size="9">
+        <ion-row>
+          <ion-col>{{ item.title }}</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-text color="medium">{{ item.subTitle }}</ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col text-right>
+        <ion-toggle></ion-toggle>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
